@@ -2,8 +2,6 @@
 var newArray = process.argv.splice(2);
 var operand;
 
-for(var i = 0; process.argv.length > i; i++){
-
 	for(var x = 0; newArray.length > x; x++){
 		if(newArray[x] === '*'){
 			operand = x;
@@ -33,7 +31,6 @@ for(var i = 0; process.argv.length > i; i++){
 	}else if(newArray[operand] === '-'){
 			var newSub = newArray[operand-1] - newArray[operand+1];
 			newArray.splice(operand-1,3,newSub);
-		}
 	}
 }
 
