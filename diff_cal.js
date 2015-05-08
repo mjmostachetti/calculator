@@ -32,10 +32,10 @@ for(var i = 0; process.argv.length > i; i++){
 
 	if(newArray[operand] === '+'){
 			var newAdd = newArray[operand+1] + newArray[operand-1];
-			newArray.splice(operand-1,3,newMult);
+			newArray.splice(operand-1,3,newAdd);
 	}else if(newArray[operand] === '-'){
 			var newSub = newArray[operand+1] - newArray[operand-1];
-			newArray.splice(operand-1,3,newDiv);
+			newArray.splice(operand-1,3,newSub);
 	}
 
 
